@@ -870,15 +870,6 @@ if submit:
         marketing_summary = get_marketing_summary(profile, dimension_scores, flags)
         chart_bytes = create_radar_chart(dimension_scores)
 
-        pdf_bytes = generate_pdf_report(
-            profile=profile,
-            normalized_score=normalized_score,
-            dimension_scores=dimension_scores,
-            flags=flags,
-            chart_bytes=chart_bytes,
-            marketing_summary=marketing_summary,
-        )
-
         st.success("Votre diagnostic a été généré avec succès.")
         st.markdown("## Votre résultat")
 
