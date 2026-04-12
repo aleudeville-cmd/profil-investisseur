@@ -951,7 +951,7 @@ data=pdf_bytes,
 file_name="diagnostic_profil_investisseur.pdf",
 mime="application/pdf",
 )
-        with st.expander("Détails techniques du scoring", expanded=False):
-            st.write(f"Score pondéré brut : {round(raw_weighted_score, 2)} / {round(max_weighted_score, 2)}")
-            st.write("Questions fortement pondérées : capacité de perte, horizon réel, discipline en phase de baisse, sécurité financière.")
+with st.expander("Détails techniques du scoring", expanded=False):
+st.write(f"Score pondéré brut : {round(raw_weighted_score, 2)} / {round(max_weighted_score, 2)}")
+st.write("Questions fortement pondérées : capacité de perte, horizon réel, discipline en phase de baisse, sécurité financière.")
             
