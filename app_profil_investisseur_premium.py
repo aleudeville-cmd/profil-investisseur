@@ -858,10 +858,6 @@ submit = st.button("Obtenir mon diagnostic investisseur")
 if submit:
     missing_questions = [q["id"] for q in QUESTIONS if q["id"] not in answers]
 
-    if not name.strip():
-        st.error("Veuillez renseigner votre nom.")
-    elif not is_valid_email(email):
-        st.error("Veuillez renseigner une adresse email valide.")
     elif not consent:
         st.error("Veuillez cocher le consentement pour continuer.")
     elif missing_questions:
