@@ -870,15 +870,6 @@ if submit:
         marketing_summary = get_marketing_summary(profile, dimension_scores, flags)
         chart_bytes = create_radar_chart(dimension_scores)
 
-        save_lead(
-            name=name,
-            email=email,
-            normalized_score=normalized_score,
-            profile_name=profile["name"],
-            dimension_scores=dimension_scores,
-            answers=answers,
-        )
-
         pdf_bytes = generate_pdf_report(
             name=name,
             email=email,
