@@ -871,8 +871,6 @@ if submit:
         chart_bytes = create_radar_chart(dimension_scores)
 
         pdf_bytes = generate_pdf_report(
-            name=name,
-            email=email,
             profile=profile,
             normalized_score=normalized_score,
             dimension_scores=dimension_scores,
