@@ -934,14 +934,16 @@ if submit:
         else:
             st.info("Aucune incohérence majeure détectée entre le risque visé, l'horizon et la capacité financière déclarée.")
 
-        st.markdown("### Prochaine étape")
+                st.markdown("### Prochaine étape")
         st.write(
             "Utilisez ce diagnostic comme base d'échange pour transformer un niveau de risque théorique en allocation concrète, enveloppes adaptées, horizon cohérent et plan d'action patrimonial."
         )
-       st.link_button(
-            "Prendre un RDV personnalisé",
+
+        st.link_button(
+            "Réserver un bilan patrimonial personnalisé",
             "https://patrimoineexpert.net/prendre-un-rdv/"
         )
+
         st.download_button(
             label="Télécharger le rapport PDF",
             data=pdf_bytes,
