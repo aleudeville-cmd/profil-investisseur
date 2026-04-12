@@ -934,13 +934,6 @@ if submit:
         else:
             st.info("Aucune incohérence majeure détectée entre le risque visé, l'horizon et la capacité financière déclarée.")
 
-                 st.markdown("### Points de vigilance")
-        if flags:
-            for flag in flags:
-                st.warning(flag)
-        else:
-            st.info("Aucune incohérence majeure détectée entre le risque visé, l'horizon et la capacité financière déclarée.")
-
         st.markdown("### Prochaine étape")
         st.write(
             "Utilisez ce diagnostic comme base d'échange pour transformer un niveau de risque théorique en allocation concrète, enveloppes adaptées, horizon cohérent et plan d'action patrimonial."
@@ -961,7 +954,5 @@ if submit:
         with st.expander("Détails techniques du scoring", expanded=False):
             st.write(f"Score pondéré brut : {round(raw_weighted_score, 2)} / {round(max_weighted_score, 2)}")
             st.write("Questions fortement pondérées : capacité de perte, horizon réel, discipline en phase de baisse, sécurité financière.")
-            st.caption(
-                "Cette version améliore la robustesse du profil par rapport à un quiz linéaire simple, tout en restant suffisamment fluide pour un usage marketing et commercial."
-            )
+            
             
