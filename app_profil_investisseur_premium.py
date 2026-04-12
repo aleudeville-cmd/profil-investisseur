@@ -915,13 +915,6 @@ if submit:
             "https://docs.google.com/forms/d/e/1FAIpQLSdFU9rg4dM1uCtg_31kcMBRUFsmihTqlMEFOtSIwXqYiucqjg/viewform?usp=publish-editor"
         )
 
-        st.download_button(
-            label="Télécharger le rapport PDF",
-            data=pdf_bytes,
-            file_name=f"diagnostic_profil_investisseur_{name.strip().replace(' ', '_').lower()}.pdf",
-            mime="application/pdf",
-        )
-
         with st.expander("Détails techniques du scoring", expanded=False):
             st.write(f"Score pondéré brut : {round(raw_weighted_score, 2)} / {round(max_weighted_score, 2)}")
             st.write("Questions fortement pondérées : capacité de perte, horizon réel, discipline en phase de baisse, sécurité financière.")
