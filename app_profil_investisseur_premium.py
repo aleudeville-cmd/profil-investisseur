@@ -938,7 +938,8 @@ if submit:
         st.write(
             "Utilisez ce diagnostic comme base d'échange pour transformer un niveau de risque théorique en allocation concrète, enveloppes adaptées, horizon cohérent et plan d'action patrimonial."
         )
-
+        st.write(
+            "Réservez un bilan patrimonial personnalisé")
         st.download_button(
             label="Télécharger le rapport PDF",
             data=pdf_bytes,
