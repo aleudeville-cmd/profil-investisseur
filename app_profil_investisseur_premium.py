@@ -856,12 +856,12 @@ st.markdown("---")
 submit = st.button("Obtenir mon diagnostic investisseur")
 
 if submit:
+
     missing_questions = [q["id"] for q in QUESTIONS if q["id"] not in answers]
 
-    elif not consent:
-        st.error("Veuillez cocher le consentement pour continuer.")
-    elif missing_questions:
-        st.error(f"Merci de répondre à toutes les questions. Questions manquantes : {missing_questions}")
+    if missing_questions:
+        st.error("Merci de répondre à toutes les questions.")
+    
     else:
         raw_weighted_score, normalized_score, max_weighted_score = calculate_weighted_score(answers)
         dimension_scores = calculate_dimension_scores(answers)
