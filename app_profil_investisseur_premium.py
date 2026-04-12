@@ -941,7 +941,7 @@ if submit:
 
         st.link_button(
             "Réserver un bilan patrimonial personnalisé",
-            "https://patrimoineexpert.net/prendre-un-rdv/"
+            "https://patrimoineexpert.net/prendre-rendez-vous/"
         )
 
         st.download_button(
