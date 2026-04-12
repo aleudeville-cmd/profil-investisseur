@@ -826,7 +826,7 @@ with st.expander("Méthodologie du diagnostic", expanded=False):
 
 st.markdown("---")
 
-st.markdown("## 2. Questionnaire premium")
+st.markdown("## Questionnaire premium")
 
 answers: Dict[int, str] = {}
 current_section = None
@@ -895,7 +895,7 @@ if submit:
         )
 
         st.success("Votre diagnostic a été généré avec succès.")
-        st.markdown("## 3. Votre résultat")
+        st.markdown("## Votre résultat")
 
         col1, col2, col3 = st.columns(3)
         col1.metric("Score pondéré", f"{normalized_score} / 100")
