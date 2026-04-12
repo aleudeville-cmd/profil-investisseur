@@ -934,23 +934,23 @@ if submit:
         else:
             st.info("Aucune incohérence majeure détectée entre le risque visé, l'horizon et la capacité financière déclarée.")
 
-                st.markdown("### Prochaine étape")
-        st.write(
-            "Utilisez ce diagnostic comme base d'échange pour transformer un niveau de risque théorique en allocation concrète, enveloppes adaptées, horizon cohérent et plan d'action patrimonial."
-        )
+st.markdown("### Prochaine étape")
 
-        st.link_button(
-            "Réserver un bilan patrimonial personnalisé",
-            "https://patrimoineexpert.net/prendre-un-rdv/"
-        )
+st.write(
+"Utilisez ce diagnostic comme base d'échange pour transformer un niveau de risque théorique en allocation concrète, enveloppes adaptées, horizon cohérent et plan d'action patrimonial."
+)
 
-        st.download_button(
-            label="Télécharger le rapport PDF",
-            data=pdf_bytes,
-            file_name=f"diagnostic_profil_investisseur_{name.strip().replace(' ', '_').lower()}.pdf",
-            mime="application/pdf",
-        )
+st.link_button(
+"Réserver un bilan patrimonial personnalisé",
+"https://patrimoineexpert.net/prendre-un-rdv/"
+)
 
+st.download_button(
+label="Télécharger le rapport PDF",
+data=pdf_bytes,
+file_name="diagnostic_profil_investisseur.pdf",
+mime="application/pdf",
+)
         with st.expander("Détails techniques du scoring", expanded=False):
             st.write(f"Score pondéré brut : {round(raw_weighted_score, 2)} / {round(max_weighted_score, 2)}")
             st.write("Questions fortement pondérées : capacité de perte, horizon réel, discipline en phase de baisse, sécurité financière.")
