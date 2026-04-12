@@ -825,12 +825,7 @@ with st.expander("Méthodologie du diagnostic", expanded=False):
     )
 
 st.markdown("---")
-st.markdown("## 1. Vos coordonnées")
-name = st.text_input("Prénom et nom")
-email = st.text_input("Email")
-consent = st.checkbox("J'accepte d'être recontacté(e) à propos de mon diagnostic et d'une stratégie patrimoniale adaptée.")
 
-st.markdown("---")
 st.markdown("## 2. Questionnaire premium")
 
 answers: Dict[int, str] = {}
