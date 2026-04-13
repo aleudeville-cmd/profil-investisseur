@@ -929,6 +929,11 @@ if submit:
             "https://docs.google.com/forms/d/e/1FAIpQLSdFU9rg4dM1uCtg_31kcMBRUFsmihTqlMEFOtSIwXqYiucqjg/viewform?usp=publish-editor"
         )
 
+        st.link_button(
+            "Réserver un bilan patrimonial personnalisé",
+            "https://patrimoineexpert.net/prendre-rendez-vous/"
+        )
+
         with st.expander("Détails techniques du scoring", expanded=False):
             st.write(f"Score pondéré brut : {round(raw_weighted_score, 2)} / {round(max_weighted_score, 2)}")
             st.write("Questions fortement pondérées : capacité de perte, horizon réel, discipline en phase de baisse, sécurité financière.")
