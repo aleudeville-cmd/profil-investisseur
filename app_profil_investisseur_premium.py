@@ -677,7 +677,6 @@ def generate_pdf_report(
     story: List[Any] = []
     story.append(Paragraph("Diagnostic profil investisseur - version premium", styles["Title"]))
     story.append(Spacer(1, 0.2 * cm))
-    story.append(Paragraph(f"Client : <b>{name}</b> - Email : <b>{email}</b>", styles["BodyText"]))
     story.append(Paragraph(f"Date : <b>{datetime.now().strftime('%d/%m/%Y %H:%M')}</b>", styles["BodyText"]))
     story.append(Spacer(1, 0.35 * cm))
 
