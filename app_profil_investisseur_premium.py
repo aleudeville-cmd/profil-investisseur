@@ -939,6 +939,13 @@ if submit:
             mime="application/pdf",
         )
 
+        st.markdown("## Aller plus loin")
+
+        st.link_button(
+        "Recevoir des recommandations personnalisées",
+        "https://docs.google.com/forms/d/e/1FAIpQLSdFU9rg4dM1uCtg_31kcMBRUFsmihTqlMEFOtSIwXqYiucqjg/viewform?usp=header"
+        )
+
         st.markdown("### Allocation indicative")
         allocation_table = {
             "Poche": [label for label, _ in profile["allocation"]],
