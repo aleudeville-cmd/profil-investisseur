@@ -32,6 +32,40 @@ st.set_page_config(
     layout="centered",
 )
 
+st.markdown("""
+<style>
+/* Bouton téléchargement PDF */
+div.stDownloadButton > button {
+    background-color: #C62828 !important;
+    color: white !important;
+    font-weight: 700 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.6rem 1rem !important;
+}
+
+/* Bouton lien Streamlit */
+div.stLinkButton > a {
+    background-color: #C62828 !important;
+    color: white !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 0.6rem 1rem !important;
+    display: inline-block !important;
+    text-align: center !important;
+}
+
+/* Effet au survol */
+div.stDownloadButton > button:hover,
+div.stLinkButton > a:hover {
+    background-color: #A61E1E !important;
+    color: white !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 LEADS_FILE = "leads_profil_investisseur_premium.csv"
 SCORE_MAP = {"a": 1, "b": 2, "c": 3, "d": 4}
 DIMENSIONS = [
