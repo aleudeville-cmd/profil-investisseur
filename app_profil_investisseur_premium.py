@@ -925,11 +925,6 @@ if submit:
         )
 
         st.link_button(
-            "Recevoir mon diagnostic personnalisé par email",
-            "https://docs.google.com/forms/d/e/1FAIpQLSdFU9rg4dM1uCtg_31kcMBRUFsmihTqlMEFOtSIwXqYiucqjg/viewform?usp=publish-editor"
-        )
-
-        st.link_button(
             "Réserver un bilan patrimonial personnalisé",
             "https://patrimoineexpert.net/prendre-rendez-vous/"
         )
