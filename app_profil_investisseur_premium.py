@@ -635,8 +635,6 @@ def create_radar_chart(dimension_scores: Dict[str, float]) -> bytes:
 
 
 def generate_pdf_report(
-    name: str,
-    email: str,
     profile: Dict[str, Any],
     normalized_score: float,
     dimension_scores: Dict[str, float],
